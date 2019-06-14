@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="ua.nikolay.fileStorageDI"/>
+
+    <bean id="file" class="ua.nikolay.fileStorageDI.Model.File">
+
+    </bean>
+
+    <bean id="storage" class="ua.nikolay.fileStorageDI.Model.Storage">
+
+    </bean>
+
+    <bean id="fileService" class="ua.nikolay.fileStorageDI.Service.FileService">
+
+    </bean>
+
+    <bean id="storageService" class="ua.nikolay.fileStorageDI.Service.StorageService">
+
+    </bean>
+
+    <bean id="fileDAO" class="ua.nikolay.fileStorageDI.Repository.FileDAO">
+
+    </bean>
+
+    <bean id="storageDAO" class="ua.nikolay.fileStorageDI.Repository.StorageDAO">
+
+    </bean>
+
+</beans>
